@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="vin01.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+
+</head>
+
+<body>
+    <!-- -----------------------alert------------------ -->
+
+    <div class="modal" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">!! 警告</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>是否已滿十八歲</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">是</button>
+                    <button type="button" class="btn btn-danger">應該有</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------alert------------------ -->
+    <nav>
+        <!-- 手機板 漢堡 -->
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <!-- 電腦版 列表 -->
+        <ul class="nav-links">
+            <li><a href="#main1" onclick="closeMenu()">TYPE</a></li>
+            <li><a href="#02" onclick="closeMenu()">FOOD</a></li>
+            <li><a href="#03" onclick="closeMenu()">WINERY</a></li>
+        </ul>
+    </nav>
+
+    <section class="landing">
+        <div class="landing-wrap">
+            <img src="./img/landing03.jpg" alt="dots">
+            <!-- <p>Une journée sans vin est une journée sans soleil</p> -->
+        </div>
+
+    </section>
+
+    <!---------------------------main1-------------------------->
+    <div class="main1 mt-5">
+        <h1 id="main1">TYPE</h1>
+        <div class="wrap">
+            <ul class="ul list-unstyled d-flex train">
+                <li>
+                    <img src="./img/main1_05.png" alt="">
+                </li>
+                <li>
+                    <img src="./img/main1_06.png" alt="">
+                </li>
+                <li>
+                    <img src="./img/main1_07.png" alt="">
+                </li>
+                <li>
+                    <img src="./img/main1_088.png" alt="">
+                </li>
+            </ul>
+<!-- ---------------------colorrow -->
+            <ul class="slider-dots list-unstyled">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <!-- -----------------------main2------------------ -->
+    <main id="02">
+        <div class="main2 mt-5">FOOD
+            <div class="main2row">
+                <div class="mycard">
+                    <div class="textwrap">
+                        <p>Red Wine</p>
+                    </div>
+                </div>
+                <div class="mycard">
+                    <div class="textwrap">
+                        <p>White Wine </p>
+                    </div>
+                </div>
+                <div class="mycard">
+                    <div class="textwrap">
+                        <p>Rosé</p>
+                    </div>
+                </div>
+                <div class="mycard">
+                    <div class="textwrap">
+                        <p>Sparkling Wine</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- -----------------------main3------------------ -->
+
+    <main id="03">
+        <div class="main3 mt-5">WINERY
+            <div class="main3row">
+                <div class="cavewrap01">
+                    <!-- <img src="./img/c4.jpg" alt=""> -->
+                    <div class="cbox">
+                        <div class="cc cbox01"></div>
+                        <div class="cc cbox02"></div>
+                        <div class="cc cbox03"> </div>
+
+                    </div>
+                    <div class="cavetext">
+                        <p>Château d'Yquem, group of LVMH</p>
+
+                    </div>
+                </div>
+
+                <div class="cavewrap02 mt-2">
+                    <!-- <img src="/img/capitou02.jpeg" alt=""> -->
+                    <div class="cbox">
+                        <div class="cc2 cbox04"></div>
+                        <div class="cc2 cbox05"></div>
+                        <div class="cc2 cbox06"> </div>
+
+                    </div>
+                    <div class="cavetext02">
+                        <p>Château Capitoul, Languedoc-Roussillon
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ----------------footer----------------------------------->
+    <footer>
+        <div class="footerwrap">
+
+            <!-- <h1>Contact</h1>
+            <div class="box border-1"></div>
+            <div class="box border-2"></div>
+            <div class="box border-3"></div> -->
+
+            <div class="iconwrap">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook-square"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div class="cccright">
+                <p>© Copyright © 2022, Ma vie Mon vin. Tout droit réservé. Taipei, TAIWAN.</p>
+            </div>   
+            
+            <div class="footerimg">
+                <img src="./img/paint01.png" alt="">
+            </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+
+    <script>
+        var page = 0;
+        $('.slider-dots li').click(function () {
+            page = $(this).index();
+            pageUpdate();
+        })
+        $('.pageRightBtn-area').click(function () {
+            page++;
+            if (page >= 4) {
+                page = 0
+            }
+            pageUpdate();
+        })
+
+        function pageUpdate() {
+            $('.slider-dots li').eq(page).css('background', '#FAC8C1').siblings().css('background', 'transparent')
+            $('ul.train').css('transform', `translateX(${page * -375}px)`)
+        }
+
+
+
+        // $('.cc').click(function(){
+        //     console.log('hi');
+        // })
+
+        $('.cbox').on('click', '.cc', function () {
+            // console.log('this', $(this));
+            console.log('hi');
+            const bgColor = $(this).css('background');
+            $('.cavewrap01').css('background', bgColor);
+        })
+        $('.cbox').on('click', '.cc2', function () {
+            // console.log('this', $(this));
+            console.log('hi');
+            const bgColor = $(this).css('background');
+            $('.cavewrap02').css('background', bgColor);
+        })
+
+        $(window).ready(() => {
+            $('#myModal').modal('show');
+        })
+
+    </script>
+
+</body>
+
+</html>
